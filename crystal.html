@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+</head>
+
+<body>
+
+    <h1>Crystal Game</h1>
+    <p>
+        Click button to see the value of crystal
+    </p>
+    <button id='btn1'>C1</button>
+    <button id='btn2'>C2</button>
+    <button id='btn3'>C3</button>
+    <button id='btn4'>C4</button>
+
+    <script>
+        //Random number at start of game
+        var startNum = Math.floor(Math.random() * 120) + 1;
+        //alert the start number to verify random generator works
+        alert('The start number is: ' + startNum);
+
+        //add random numbers to the 4 crystal buttons, then alert to verify
+        var b1 = document.querySelector('#btn1')
+        function button1() {
+            var randomNum1 = Math.floor(Math.random() * 12) + 1;
+            alert('The crystal value is: ' + randomNum1)
+        };
+        b1.addEventListener('click', button1);
+        var b2 = document.querySelector('#btn2')
+        function button2() {
+            var randomNum2 = Math.floor(Math.random() * 12) + 1;
+            alert('The crystal value is: ' + randomNum2)
+        };
+        b2.addEventListener('click', button2);
+        var b3 = document.querySelector('#btn3')
+        function button3() {
+            var randomNum3 = Math.floor(Math.random() * 12) + 1;
+            alert('The crystal value is: ' + randomNum3)
+        };
+        b3.addEventListener('click', button3);
+        var b4 = document.querySelector('#btn4')
+        function button4() {
+            var randomNum4 = Math.floor(Math.random() * 12) + 1;
+            alert('The crystal value is: ' + randomNum4)
+        };
+        b4.addEventListener('click', button4);
+
+        //add the button numbers and declare the sum in var sumNum
+        //if (sumNum === startNum) {player wins}
+        //else if (sumNum < startNum) {game continues}
+        //else {game over}
+
+    //Display results to screen rather than alert results
+
+    </script>
+
+    <!--save script to external file and link it-->
+
+</body>
+
+</html>
